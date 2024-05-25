@@ -10,7 +10,7 @@ const hospitalRoute=require('./controller/HospitalRoute');
 
 const app = express();
 mongoose.set("strictQuery",true);
-mongoose.connect("mongodb+srv://user:123@cluster0.03nkw8g.mongodb.net/scms");
+mongoose.connect("");// replace with ur mongodb vscode link
 var db=mongoose.connection;
 db.on("open",()=>console.log("connected to db"));
 db.on("error",()=>console.log("Error occured"));
